@@ -13,7 +13,10 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
   }
-  
+  .logo img{
+    width: 60px;
+  }
+
   .main-image {
     width: 100%;
     height: 25rem;
@@ -27,3 +30,13 @@
     object-fit: cover;
     transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
   }
+
+  @media (max-width:768px)
+  {
+    .header{
+      justify-content:space-between;
+      padding: 0% 5%;
+
+    }
+  }
+

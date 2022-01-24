@@ -2,13 +2,16 @@ import React,{Fragment} from 'react'
 import classes from './Header.module.css'
 import meals from '../../assets/meals.jpg'
 import HeaderCartButton from './HeaderCartButton'
+import logo from '../../assets/logo.png'
 
-const Header=()=>{
+const Header=(props)=>{
     return(
     <React.Fragment>
     <header className={classes.header}>
-        <h1>FOOD APP</h1>
-        <HeaderCartButton/>
+        <div className={classes.logo}>
+        <img  src={logo} alt="Logo"/>
+        </div>
+        <HeaderCartButton onClick={props.onShowCart} />
     </header>
     <div className={classes['main-image']}>
         <img src={meals} alt='Table Full of Food'/>
