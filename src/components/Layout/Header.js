@@ -3,7 +3,7 @@ import classes from './Header.module.css'
 import meals from '../../assets/meals.jpg'
 import HeaderCartButton from './HeaderCartButton'
 import logo from '../../assets/logo.png'
-import CartContext from '../../store/card-context'
+import CartContext from '../../store/CartContext'
 const Header=(props)=>{
 
     const cartCtx=useContext(CartContext);
