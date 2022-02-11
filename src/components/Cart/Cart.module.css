@@ -44,3 +44,9 @@
     background-color: #8a2b06;
     color: white;
   }
+  @media (max-height:768px)
+  {
+    .cart-items{
+      max-height: 12rem;
+    }
+  }
